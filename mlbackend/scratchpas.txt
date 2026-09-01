@@ -1,0 +1,64 @@
+2 main models 
+
+1: Disease Classification — "What disease/severity does this eye have?
+    Retinal Image
+      ↓
+    CNN / ViT
+        ↓
+    DR Severity = **Moderate DR**
+    
+    0 → No DR
+    1 → Mild
+    2 → Moderate
+    3 → Severe
+    4 → Proliferative DR
+
+    APTOS-2019 kaggle (10gb and roughly  5k total image)
+    EyePACS
+    IDRiD (grading part)'
+
+2: Lesion Segmentation — "Where exactly is the disease?"
+        Retinal Image
+            ↓
+        U-Net / SegFormer
+            ↓
+        Segmentation Mask
+    
+    should Mask:
+
+     Hemorrhage-> lets say black 
+     Microaneurysm-> red
+     Hard Exudate->yellow
+     Soft Exudate->green
+     
+
+    pipeline should be 
+                     RETINAL IMAGE
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+          ▼                         ▼
+   CLASSIFICATION              SEGMENTATION
+          │                         │
+          ▼                         ▼
+   DR Severity              Lesion Locations
+          
+   No DR                    Microaneurysms
+   Mild                     Hemorrhages
+   Moderate                 Hard Exudates
+   Severe                   Soft Exudates
+   PDR
+          │                         │
+          └────────────┬────────────┘
+                       ▼
+                 COMBINED RESULTS
+                       │
+                       ▼
+                    RAG SYSTEM
+                       │
+                       ▼
+          Medical Explanation / Report
+
+
+    
+
