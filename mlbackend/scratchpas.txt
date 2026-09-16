@@ -62,3 +62,8 @@
 
     
 
+no dr domniates the data
+brightnes btw 60-80 is very less dominatged by no_dr while 40-60 and 70-100 is very sominated by 
+
+dr has a lost of outliers in contrast 
+black ratio of no_dr has is very wide form 0.2 to 0.55 
