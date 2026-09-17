@@ -19,6 +19,7 @@
 # data & datasets
 **/data/
 **/final_data/
+**/processed_data/
 mlbackend/data/
 mlbackend/classification/final_data/
 .ipynb_checkpoints/
