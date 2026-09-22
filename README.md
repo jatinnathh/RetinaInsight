@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge" alt="Status"/>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/>
-</p>
+   </p>
 
 # RetinaInsight
 
@@ -672,7 +670,7 @@ retinainsight/
 | **CUDA Toolkit** | 11.8+ (optional) | GPU acceleration for PyTorch training; CPU-only mode is supported but significantly slower |
 | **Git** | 2.x | Version control |
 
-### Frontend Setup
+<!-- ### Frontend Setup
 
 ```bash
 # Clone the repository
@@ -803,4 +801,4 @@ This project is for **educational and research purposes only**. It is not intend
 
 <p align="center">
   <b>RetinaInsight</b> — Seeing what the human eye cannot.
-</p>
+</p> -->
